@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Issue Reporter</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+</head>
+<body>
+
+    <header>
+        <h1>🚨 Reported Issues</h1>
+        <button id="hostButton" class="admin-login">Admin Login</button>
+    </header>
+
+    <div id="map"></div>
+
+    <div class="container">
+        <h2>📄 Issue List</h2>
+        <ul id="issue-list">
+            <li>Pothole on Main Street</li>
+            <li>Broken Traffic Light</li>
+            <li>Water Leakage near Mall</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h2>📢 Have an issue?</h2>
+        <button id="userButton" class="report-btn">Report an Issue</button>
+    </div>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>

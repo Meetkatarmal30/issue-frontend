@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="../assets/styles.css">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+</head>
+<body>
+
+    <h1>📍 Report an Issue</h1>
+
+    <div class="form-container">
+        <label for="issue-title">Select Issue Type:</label>
+        <select id="issue-title">
+            <option value="pothole">🚧 Road Pothole</option>
+            <option value="pipeline">💧 Water Pipeline Break</option>
+            <option value="sewage">🛑 Sewage Issue</option>
+            <option value="signal">🚦 Traffic Signal Issue</option>
+            <option value="other">❓ Other</option>
+        </select>
+
+        <label>Select Location:</label>
+        <div id="map"></div>
+        <p>📌 Selected Location: <span id="location-coordinates">Fetching location...</span></p>
+
+        <button id="submit-report">Submit Report</button>
+    </div>
+
+    <script src="../assets/script.js"></script>
+</body>
+</html>
